@@ -13,10 +13,14 @@
     padding: 0;
 }
 
-body {
-    font-family: 'Roboto', sans-serif;
+html {
     font-size: 18px;
     line-height: 1.5;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: var(--clr-white);
 }
 
 .container {
@@ -31,8 +35,114 @@ body {
     background-color: var(--clr-dark-blue);
 }
 
-/* Header styling */
+/* Header */
 
 .nav .container {
     display: flex;
+    justify-content: space-between;
+    padding-top: 1em;
 }
+
+.nav__links {
+    display: flex;
+    gap: 1em;
+}
+
+.nav__links li {
+    list-style: none;
+}
+
+.nav__link {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--clr-white);
+}
+
+.nav__link:visited {
+    color: var(--clr-light-blue);
+}
+
+/* Landing section */
+
+.landing .container {
+    display: flex;
+    gap: 3em;
+    padding-block: 5em;
+}
+
+.landing__left h1 {
+    font-size: 2.7rem;
+    line-height: 1.1;
+}
+
+.landing__left p {
+    padding-block: 1em;
+    color: var(--clr-light-gray);
+}
+
+.landing__left button {
+    padding: 0.8em 2.5em;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--clr-light-blue);
+    font-weight: 800;
+    font-size: 1rem;
+    color: var(--clr-white);
+    cursor: pointer;
+}
+
+.landing__right {
+    max-width: 50%;
+}
+
+.landing__right img {
+    aspect-ratio: 16 / 9;
+    display: block;
+    width: 100%;
+}
+
+/* Information section */
+
+.information .container {
+    padding-block: 1.5em;
+}
+
+.information .container h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.information__cards {
+    display: flex;
+    gap: 3em;
+    margin-top: 1.5em;
+}
+
+.information__cards img {
+    display: block;
+    aspect-ratio: 1 / 1;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.information__cards p {
+    margin-top: 1em;
+    font-size: 0.85rem;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
