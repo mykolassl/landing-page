@@ -58,7 +58,7 @@ body {
     color: var(--clr-white);
 }
 
-.nav__link:visited {
+.nav__link:hover {
     color: var(--clr-light-blue);
 }
 
@@ -80,7 +80,7 @@ body {
     color: var(--clr-light-gray);
 }
 
-.landing__left button {
+.button {
     padding: 0.8em 2.5em;
     border: none;
     border-radius: 5px;
@@ -152,11 +152,43 @@ body {
     font-weight: 600;
 }
 
+/* Sign up section */
 
+.signup {
+    padding-block: 5em;
+    color: var(--clr-white);
+}
 
+.signup .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 3em 7em;
+    background-color: var(--clr-light-blue);
+    border-radius: 15px;
+}
 
+.signup__text {
+    color: var(--clr-light-gray);
+}
 
+.signup .container .button {
+    outline: 2px solid var(--clr-white);
+    transition: all 0.2s ease-in-out;
+}
 
+.signup .container .button:hover {
+    background-color: var(--clr-white);
+    color: var(--clr-light-blue);
+}
 
+/* Footer */
 
+footer {
+    padding-block: 2rem;
+    background-color: var(--clr-dark-blue);
+    color: var(--clr-white);
+    text-align: center;
+    font-size: 1.25rem;
+}
 
