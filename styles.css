@@ -1,0 +1,38 @@
+:root {
+    --clr-dark-blue: #1F2937;
+    --clr-light-blue: #3882F6;
+    --clr-white: #F9FAF8;
+    --clr-light-gray: #E5E7EB;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.container {
+    width: 100%;
+    max-width: 70rem;
+    margin: 0 auto;
+}
+
+.nav,
+.landing {
+    color: var(--clr-white);
+    background-color: var(--clr-dark-blue);
+}
+
+/* Header styling */
+
+.nav .container {
+    display: flex;
+}
